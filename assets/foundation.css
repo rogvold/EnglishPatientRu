@@ -18,6 +18,7 @@ body { background: #fff; font-family: "Helvetica Neue", "Helvetica", Helvetica, 
 /* General ---------------------- */
 
 
+
 .container  { max-width: 980px; padding: 0px 2px 20px 2px; margin-left: auto; margin-right: auto; min-height: 400px;  }
 
 .box { background: #fff; border-top: 4px solid #f5f7f7 ; padding: 16px 0px 6px 0px; margin-bottom: 12px; }
@@ -25,7 +26,7 @@ body { background: #fff; font-family: "Helvetica Neue", "Helvetica", Helvetica, 
 .logo { float: right; margin: 24px 10px 0 23px; }
 @media only screen and (max-width: 767px) { .logo { margin: 16px 0px 0px 0px; } }
 
-.wrapperContent { background: #fff; margin-top: -240px; 	margin-left: 15px; margin-right: 15px; padding: 30px 14px 14px 14px; position: relative; z-index: 10; }
+.wrapperContent { background: #fff; margin-top: -210px; 	margin-left: 15px; margin-right: 15px; padding: 30px 14px 14px 14px; position: relative; z-index: 10; }
 @media only screen and (max-width: 900px){ .wrapperContent { margin: -220px 0px 0px 0px;} }
 
 .wrapperContent .container  { max-width: 980px; background: none repeat scroll 0 0 #FFFFFF; padding: 30px 30px 20px 30px; min-height: 400px; }
@@ -42,7 +43,7 @@ body { background: #fff; font-family: "Helvetica Neue", "Helvetica", Helvetica, 
 
 /* Registration ---------------------- */
 
-.reglayer  { margin: 28px 0 10px 14px; border: 10px solid #feeac3; background-color: #fcf8e3; height: 380px;	padding: 6px; }
+.reglayer  { margin: 2px 0 10px 14px; border: 10px solid #feeac3; background-color: #fcf8e3; height: 380px;	padding: 6px; }
 @media only screen and (max-width: 767px) { .reglayer  {	margin: 28px 0 0 0;	border: 3px solid #feeac3;	background-color: #fcf8e3; height: 100%; padding: 2px 2px 14px 2px; } }
 
 /* Links ---------------------- */
@@ -85,7 +86,7 @@ figure { margin: 0; }
 /* Base Type Styles Using Modular Scale ---------------------- */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; font-size: 14px; direction: ltr; }
 
-p { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.6; margin-bottom: 17px; color:#5d5d5d; }
+p { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 1.6; margin-bottom: 17px; color:#5d5d5d; }
 
 p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
 p.features { font-size: 12px; line-height: 1.6; margin-bottom: 17px; color:#5d5d5d; }
@@ -107,8 +108,9 @@ h3 { font-size: 24px; font-family: 'Source Sans Pro', sans-serif; font-weight: 4
 h4 { font-size: 32px; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color:#db3939; }
 
 h5 { font-size: 19px; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color:#fff; }
-@media only screen and (max-width: 767px){ h5 { display: none;} }
-@media only screen and (max-width: 900px){ h5 { display: none;} }
+
+@media only screen and (max-width: 767px){ h5 { display: block;} .containerTopbar{height: auto !important;} }
+@media only screen and (max-width: 900px){ h5 { display: block;} .containerTopbar{height: auto !important;}  }
 
 h6 { font-size: 30px; font-family: 'Source Sans Pro', sans-serif; font-weight: 600; color: #db3939; letter-spacing: -1px; margin-bottom: 24px; }
 
@@ -516,8 +518,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcaf00', end
 /* Don't use native buttons on iOS */
 input[type=submit].button, button.button { -webkit-appearance: none; }
 
-@media only screen and (max-width: 980px) { .button { display: block; padding: 10px 4px 10px 4px; }	 }
-@media only screen and (max-width: 767px) { .button { font-size: 14px; display: block; padding: 10px 2px; }
+@media only screen and (max-width: 980px) { .button {  padding: 10px 4px 10px 4px; } #announcementBlock {  font-size: 15px !important; }	 }
+@media only screen and (max-width: 767px) { .button { font-size: 14px; padding: 10px 2px; #announcementBlock {  font-size: 13px !important; } }
+}
+
   button.button, input[type="submit"].button { width: 100%; padding-left: 0; padding-right: 0; } }
 /* Correct FF button padding */
 @-moz-document url-prefix() { button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner { border: none; padding: 0; }

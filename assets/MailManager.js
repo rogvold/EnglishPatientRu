@@ -1,0 +1,34 @@
+MailManager = function(){
+    var self = this;
+    this.emailsList = [];
+    
+    this.initParse = function(){
+        var applicationId = "kQhSiMvBQeJORpAexyc18sBg00oBuVOJnEyRbLhI";
+        var javaScriptKey = "vRQZOqm2bXeeaCu0i17RX8BmaJdKKMCsxL0QPXW3";
+        Parse.initialize(applicationId, javaScriptKey);
+    }
+    
+    this.loadEmails = function(){
+        var ContactForm = Parse.Object.extend("ContactForm");
+        var query = new Parse.Query(ContactForm);
+        query.limit(1000);
+        query.descending("createdAt");
+        var list = [];
+        query.find(function(results){
+            for (var i in results){
+                list.push({name: results[i].get("name"), email: results[i].get("email"), phone: results[i].get("phone")});
+            }
+            self.prepareListHtml(list);
+        });
+    }
+    
+    this.prepareListHtml = function(list){
+        var s = '';
+        for (var i in list){
+            s+= '<tr><td>'+list[i].name + '</td> <td>' + list[i].email + '</td>  <td>' + list[i].phone + '</td></tr>';
+        }
+        $('#table').append(s);
+    }
+
+}
+
