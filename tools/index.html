@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nprogress.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script type="text/javascript" src="js/underscore.js" ></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/nprogress.js" ></script>
+
+    <script type="text/javascript" src="js/parse.min.js" ></script>
+    <script type="text/javascript" src="js/englishpatient.youtubeTools.js" ></script>
+    <meta charset="UTF-8">
+    <title>Tools</title>
+
+    <style>
+
+        #resultsList{
+            padding-left: 5px;
+        }
+
+        #resultsList li{
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 470px;
+            height: 80px;
+            background-color: white;
+            padding: 5px;
+            cursor: pointer;
+
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        }
+
+        #resultsList li:hover{
+            opacity: 0.7;
+        }
+
+        #resultsList li .resultImage{
+            display: inline-block;
+            width: 100px;
+            height: 70px;
+            background-color: lightyellow;
+        }
+
+        #resultsList li .resultContent{
+            height: 70px;
+            display: inline-block;
+            vertical-align: top;
+            width: 350px;
+            padding-left: 5px;
+            padding: 5px;
+        }
+
+
+        #resultsList li.selectedItem{
+            border: 2px solid lightsalmon;
+            background-color: lightgoldenrodyellow;
+        }
+
+
+
+
+        #resultsBlock{
+            display: inline-block;
+            width: 490px;
+            vertical-align: top;
+            /*                max-height: 460px;*/
+            /*                overflow-y: auto;*/
+        }
+
+        #resultsList li .resultImage {
+            display: inline-block;
+            width: 100px;
+            height: 70px;
+            background-color: lightyellow;
+            background-size: 100%;
+        }
+
+        #resultsList li .resultContent {
+            height: 70px;
+            display: inline-block;
+            vertical-align: top;
+            width: 350px;
+            padding-left: 5px;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+        <h2>Search query</h2>
+        <div class="input-group">
+            <input type="text" class="form-control" id="searchInput"/>
+            <div class="input-group-btn">
+                <button class="btn btn-primary"  id="searchButton" >Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3>
+            results number: <span id="resultsNumber" ></span>
+        </h3>
+    </div>
+
+    <div class="row">
+        <button class="btn" id="uploadToParseButton" >upload to parse</button>
+    </div>
+
+    <div class="row">
+        <h3 id="currentWord"></h3>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-7" >
+            <ul id="resultsList">
+
+            </ul>
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+
+</div>
+
+<input id="testInput" />
+<button id="testButton">
+    test
+</button>
+<hr/>
+
+<input id="sInput" />
+<button class="btn btn-info" id="sButton">
+    search
+</button>
+
+
+
+<script>
+
+    $(function(){
+        pt = new PatientTools();
+        pt.init();
+
+        var applicationId = "YgdiEB0yZ2nz4EPlfH7ayPhRMLweG3G6JSTg7kO3";
+        var javaScriptKey = "Z5OmGYK86M6rSw3klWDa2gsjGTOCZXzkFK86pBH5";
+        Parse.initialize(applicationId, javaScriptKey);
+
+        $('#testButton').bind('click', function(){
+            var youtubeId = $('#testInput').val().trim();
+            Parse.Cloud.run('processYoutube', {
+                youtubeId: youtubeId
+            });
+        });
+
+
+    });
+
+</script>
+
+</body>
+</html>
