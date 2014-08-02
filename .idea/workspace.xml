@@ -2,67 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f86c26-946c-43bd-bcf7-d2e45edd76ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/updatedInterior/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/updatedInterior/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/updatedInterior/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/updatedInterior/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/updatedInterior/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/updatedInterior/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ad.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chronicle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/js/englishpatient.youtubeTools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lessons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/search2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/speakers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/subtitles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/js/underscore.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/1.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/27764822.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ConvivaCommunicationProxy(1).html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ConvivaCommunicationProxy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/LivePass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/LivePassModuleMain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/MailManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/buben_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ga.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/hallo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/hate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/header-bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/interior/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/jquery.foundation.orbit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/jquery.foundation.reveal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/jquery.notebook.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/jquery.notebook.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/modernizr.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/newsManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/plane.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/player.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/proxy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/resize.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/seal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/tiny.editor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/wysiwyg.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/jquery.min.js" afterPath="$PROJECT_DIR$/tools/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/mailList.js~" afterPath="$PROJECT_DIR$/tools/json/academic.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/parse.min.js" afterPath="$PROJECT_DIR$/tools/js/parse.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EnglishPatientRu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,8 +59,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.732899" vertical-offset="2070" max-vertical-offset="10815">
-              <caret line="153" column="26" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.6815643" vertical-offset="9729" max-vertical-offset="10815">
+              <caret line="674" column="33" selection-start-line="674" selection-start-column="33" selection-end-line="674" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -244,6 +185,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,59 +218,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnglishPatientRu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnglishPatientRu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnglishPatientRu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnglishPatientRu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="updatedInterior" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnglishPatientRu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnglishPatientRu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interior" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,7 +294,6 @@
     <frame x="0" y="22" width="1280" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -415,6 +305,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32535884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -826,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.732899" vertical-offset="2070" max-vertical-offset="10815">
-          <caret line="153" column="26" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.6815643" vertical-offset="9729" max-vertical-offset="10815">
+          <caret line="674" column="33" selection-start-line="674" selection-start-column="33" selection-end-line="674" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
