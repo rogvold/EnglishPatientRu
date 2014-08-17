@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0041)http://www.themetwins.com/conversio/demo/ -->
-<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
 
   <!-- Set the viewport width to device width for mobile -->
@@ -31,14 +32,17 @@
   <!-- Include Google Fonts Source Sans Pro -->
   <link href="./assets/css" rel="stylesheet" type="text/css">
   <script src="assets/parse.min.js"> </script>
-<script src="assets/newsManager.js"> </script>
+  <script src="assets/newsManager.js"> </script>
   
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
   
-<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;GoogleFontApi&quot;:-1,&quot;jQuery&quot;:&quot;1.8.2&quot;,&quot;Modernizr&quot;:&quot;2.6.0&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+<style id="clearly_highlighting_css" type="text/css">
 
 .twelve.columns{
     margin-bottom: 20px;
@@ -80,12 +84,6 @@ a {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 767px)
-.column, .columns {
-    width: auto !important;
-    float: none;
-}
-
 p{
     color:#222222 !important;
     margin-bottom: 0px;
@@ -106,19 +104,47 @@ p{
     line-height: 26px !important;
 }
 
-table tbody tr:nth-child(even) {
-    background: none;
-}
-
 table {
     border: none;
 }
 
+table tbody tr:nth-child(even)
+{
+    background: none;
+}
+
 </style>
+
 <script>
-window["_GOOG_TRANS_EXT_VER"] = "1";
+    window["_GOOG_TRANS_EXT_VER"] = "1";
 </script>
 
+<script>
+    $(document).ready(
+            function(){
+                $("#readMorePro1").click(function()
+                {
+                    var elementToShow = document.getElementById("pro1");
+                    elementToShow.style.display = "block";
+                    var elementToHide = document.getElementById("readMorePro1");
+                    elementToHide.style.display = "none";
+                });
+                $("#readMorePro2").click(function()
+                {
+                    var elementToShow = document.getElementById("pro2");
+                    elementToShow.style.display = "block";
+                    var elementToHide = document.getElementById("readMorePro2");
+                    elementToHide.style.display = "none";
+                });
+                $("#readMorePro3").click(function()
+                {
+                    var elementToShow = document.getElementById("pro3");
+                    elementToShow.style.display = "block";
+                    var elementToHide = document.getElementById("readMorePro3");
+                    elementToHide.style.display = "none";
+                });
+            });
+</script>
 
 </head>
 
@@ -430,7 +456,7 @@ window["_GOOG_TRANS_EXT_VER"] = "1";
 			</div>
 
 			
-			<div class="row" id="pricing" ><div class="twelve columns"><hr></div></div>
+			<div id="pricing" class="row"><div class="twelve columns"><hr></div></div>
 
             <div class="row" style="text-align: center;">
                 <div class="twelve columns" style="line-height: 20px; text-align: center;">
@@ -438,52 +464,55 @@ window["_GOOG_TRANS_EXT_VER"] = "1";
                     <table style="margin-top: 30px;">
                         <tr>
                             <td style="text-align: center; width: 300px;"><h3><b>Пакет «Standard»</b></h3>
-                                <h3>3800 руб</h3>
+                              <!--  <h3>3800 руб</h3> -->
                             </td>
                             <td style="text-align: center; width: 300px;"><h3><b>Пакет «Premium»</b></h3>
-                                <h3>9000 руб</h3>
-                            </td>
-                            <td style="text-align: center; width: 300px;"><h3><b>Пакет «VIP»</b></h3>
-                                <h3>20000 руб</h3>
-                            </td>
-                        </tr>
+                                <!--   <h3>9000 руб</h3> -->
+                             </td>
+                             <td style="text-align: center; width: 300px;"><h3><b>Пакет «VIP»</b></h3>
+                              <!--   <h3>20000 руб</h3> -->
+                             </td>
+                         </tr>
 
-                        <tr>
-                            <td style="text-align: center; width: 300px;">
-                                - группа от 8 до 10 человек <br/>
-                                - стоимость занятий за один месяц 3800 руб. Режим занятий: 2 раза в неделю по 2 академических часа (80 минут) <br/>
-                                Дополнительно пакет включает в себя:
-                                занятия в оборудованном, комфортном  медиа-центре,
-                                звонки русскоязычных преподавателей для общения на английском в течение дня (по предварительной договоренности),
-                                загрузка аудиоматериалов для прослушивания на любом аудиоустройстве
-                                И, чтобы ваш английский всегда шел в ногу со временем, обязательное индивидуальное общение с носителем языка раз в месяц.
+                         <tr>
+                             <td style="text-align: center;">
+                                 - группа от 8 до 10 человек  <br/>
+                                 - режим занятий: 2 раза в неделю по 90 мин <br/>
+                                <a id="readMorePro1" href="javascript:void(0)">читать далее...</a>
+                                <div id="pro1" style="display: none">
+                                    Дополнительно пакет включает в себя: <br/>
+                                    -занятия в оборудованном, комфортном медиа-центре,
+                                    -звонки русскоязычных преподавателей для общения на английском в течение дня (по предварительной договоренности),
+                                    -загрузка аудиоматериалов для прослушивания на любом аудиоустройстве <br/>
+                                    И, чтобы ваш английский всегда шел в ногу со временем, <b>обязательное индивидуальное общение с носителем языка раз в месяц</b>
+                                </div>
                             </td>
-                            <td style="text-align: center; width: 300px;">
-                                -	Группа до 5 человек <br/>
-                                Дополнительные преимущества:
-                                занятия в оборудованном, комфортном  медиа-центре,
-                                звонки носителя языка и русскоязычных преподавателей для общения на английском в течение дня,(по предварительной договоренности)
-                                доступ к аудио и видео материалам курса
-                                загрузка аудиоматериалов для прослушивания на любом аудиоустройстве, и контроль их содержания с учетом индивидуальных вкусов и предпочтений обучающегося.
-                                Подбор методматериалов по вкусам обучающегося (музыка, видео).
-                                обязательное индивидуальное общение с носителем языка раз в неделю.
+                            <td style="text-align: center;">
+                                - группа - группа до 5 человек <br/>
+                                - режим занятий: 2 раза в неделю по 90 мин. <br/>
+                                <a id="readMorePro2" href="javascript:void(0)">читать далее...</a>
+                                <div id="pro2" style="display: none">
+                                    Дополнительные преимущества:
+                                    -занятия в оборудованном, комфортном медиа-центре,
+                                    -звонки носителя языка и русскоязычных преподавателей для общения на английском в течение дня (по предварительной договоренности)
+                                    -доступ к аудио и видео материалам курса загрузка аудиоматериалов для прослушивания на любом аудиоустройстве, и контроль их содержания с учетом индивидуальных вкусов и предпочтений обучающегося.
+                                    -Подбор методматериалов по вкусам обучающегося (музыка, видео)
+                                    -<b>обязательное индивидуальное общение с носителем языка раз в неделю</b>
+                                </div>
                             </td>
-                            <td style="text-align: center; width: 300px;">
+                            <td style="text-align: center;">
                                 - индивидуальные занятия (1-2 чел) <br/>
-                                Дополнительные преимущества:
-                                занятия в оборудованном, комфортном  медиа-центре,
-                                подбор методматериалов по вкусам обучающегося (музыка, видео).
-                                доступ к аудио и видео материалам курса
-                                загрузка аудиоматериалов для прослушивания на любом аудиоустройстве, и контроль их содержания с учетом индивидуальных вкусов и предпочтений обучающегося.
-                                обязательное индивидуальное общение с носителем языка раз в неделю.
-                                возможность переноса времени занятия на сутки.
-                                Возраст учащихся: 17+ лет
-                                Индивидуальные занятия (или пара):
-                                Мы  учитываем ваши потребности и личные особенности,
-                                программа разрабатывается индивидуально.
-                                Для занятий вы можете выбрать любое удобное для вас время, включая вечернее время и выходные.
-                                <!--Стоимость одного ак. часа 600 руб. (русскоязычный преподаватель)-->
-                                <!--60 мин. с носителем языка – 2500 руб-->
+                                - режим занятий: 2 раза в неделю по 90 мин <br/>
+                                <a id="readMorePro3" href="javascript:void(0)">читать далее...</a>
+                                <div id="pro3" style="display: none">
+                                    Дополнительные преимущества:
+                                    -занятия в оборудованном, комфортном медиа-центре,
+                                    -подбор методматериалов по вкусам обучающегося (музыка, видео).
+                                    -доступ к аудио и видео материалам курса загрузка аудиоматериалов для прослушивания на любом аудиоустройстве, и контроль их содержания с учетом индивидуальных вкусов и предпочтений обучающегося.
+                                    -обязательное индивидуальное общение с носителем языка раз в неделю.
+                                    -возможность переноса времени занятия на сутки.
+                                    Мы учитываем ваши потребности и личные особенности, программа разрабатывается индивидуально. Для занятий вы можете выбрать любое удобное для вас время, включая вечернее время и выходные.
+                                </div>
                             </td>
                         </tr>
 
