@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="skinry">
+      <paths name="englishpatient.ru">
         <serverdata>
           <mappings>
             <mapping deploy="/var/www/englishpatient.ru" local="$PROJECT_DIR$" web="/" />
