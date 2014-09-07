@@ -26,9 +26,6 @@
   <script src="assets/parse.min.js"> </script>
   <script src="assets/newsManager.js"> </script>
 
-  <link rel="stylesheet" href="http://www.themetwins.com/conversio/demo/fonts/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css">
-  <link rel="stylesheet" href="http://www.themetwins.com/conversio/demo/fonts/foundation_icons_social/stylesheets/social_foundicons.css">
-
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -115,6 +112,11 @@ table tbody tr:nth-child(even)
 <script>
     $(document).ready(
             function(){
+                $('a[href^="#"]').click(function(){
+                    var target = $(this).attr('href');
+                    $('html, body').animate({scrollTop: $(target).offset().top}, 500);
+                    return false;
+                });
                 $("#readMorePro1").click(function()
                 {
                     var elementToShow = document.getElementById("pro1");
@@ -139,53 +141,57 @@ table tbody tr:nth-child(even)
             });
 </script>
 
+<style>
+    .mainButton
+    {
+        background-color: rgb(219,57,57);
+        border-radius: 10px;
+        border-color: rgb(219,57,57);
+        color: #ffffff;
+    }
+</style>
+
 </head>
 
 <body style="background-image: url('img/3.jpg');">
 
 <!-- Header & Background -->
 <header style="background: url('assets/plane.jpg') no-repeat scroll center bottom rgb(240, 232, 213); box-shadow: 0 5px 40px rgba(0, 0, 0, 0.46); ">
-	<div class="container">
-	
-	<!-- Pagehead & Memberlogin -->
-		<div class="row">
-			<div class="eight columns "></div>
-			<div class="two columns "></div>
-			<div class="two columns "  style="display: none;" >
-			
-			    <a href="#" data-reveal-id="myModal">
-			        <span class="label login">
-			        <i class="small foundicon-lock"></i> Memberlogin
-			        </span>
-			    </a>
-			</div>
-			
-		</div>
-		<div class="row">
-			<div class="twelve columns">
-				<div class="containerTopbar" style="box-shadow: 0 5px 40px rgba(0, 0, 0, 0.46); border-radius: 40px; padding-top: 10px;">
-					<div class=" columns " ><a href="javascript: window.location.href=window.location.href ;"><img class="" title="logo" alt="logo" style="height: 70px; margin-top: 0px;" src="./assets/buben_icon.png"></a>
+	<div class="container" id="main">
+        <div class="row" style="position: fixed; z-index: 1000; width: 975px; margin-top: 0px;">
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="containerTopbar" style="box-shadow: 0 5px 40px rgba(0, 0, 0, 0.46); border-radius: 40px;">
+                    <div class="columns" ><a href="index.html"><img class="" title="logo" alt="logo" style="height: 70px;" src="./assets/buben_icon.png"></a>
                     </div>
-					<div class="six mobile-one columns" style="padding-left: 0px;"><h1 style="font-size: 36px; color: white;">Английский Пациент</h1>
+                    <div class="columns" style="padding-left: 0px; float: left;"><h1 style="font-size: 36px; color: white;">
+                        Английский Пациент
+                    </h1>
                     </div>
-					<div class="four mobile-one columns">
-					    <h4 style="font-size: 18px; color: white;" >
-					    Томск, ул. Елизаровых, 17/3 <br/>
-					    +7 (3822) 413-771 <br/>
-                        +7 (923) 403-5027
-					    </h4>
-					</div>
-				</div>
-			</div>
-		</div>
-        <div class="btn-group" style="margin-top: 0px;">
-            <button type="button" class="btn btn-default" style="background-color: red;"><b>Left</b></button>
-            <button type="button" class="btn btn-default" style="background-color: red;"><b>Middle</b></button>
-            <button type="button" class="btn btn-default" style="background-color: red"><b>Right</b></button>
+                    <div class="four mobile-one columns">
+                        <h4 style="font-size: 18px; color: white;" >
+                            Томск, ул. Елизаровых, 17/3 <br/>
+                            +7 (3822) 413-771 <br/>
+                            +7 (923) 403-5027
+                        </h4>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div class="btn-group">
+                        <a type="button" class="btn btn-default mainButton" href="#main"><b>Главная</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="http://news.englishpatient.ru" target="_blank"><b>Новости</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="#history"><b>История</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="#technology"><b>Технологии</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="#teachers"><b>Преподаватели</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="#interier"><b>Интерьер</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="#pricing"><b>Цены</b></a>
+                        <a type="button" class="btn btn-default mainButton" href="#admin"><b>Администрация</b></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 		<!-- Registration Form -->
-		<div class="row">
+		<div class="row" style="margin-top: 150px;">
 			<div class="containerReg" >
 				<div class="twelve columns">
 					<div class="six columns" style="opacity: 0.9; float: right;">
@@ -214,31 +220,20 @@ table tbody tr:nth-child(even)
                             </a>
                         </form>
                     </div>
-					<!-- Spacer Columns -->
-					<div class="five columns">
-
-					</div>
 				</div>
 			</div>
 		</div>
-				
+
 		<!-- Picturetopic -->
 		<div class="row">
-			<div class="eight columns"  style="float: right;" ></div>
-			<div class="five columns" style="margin-top: -300px; float: left;" >
+			<div class="five columns" style="float: left; margin-top: -200px; margin-left: 30px;" >
 			    <div class="picturetopic reglayer" style="text-align: center; font-size: 22px; color: black; height: 90px; opacity: 0.8; width: 300px; box-shadow: 0 5px 40px rgba(0, 0, 0, 0.46); border-radius: 20px;" >
 			        Silence is golden.<br/>
 			        Too bad nobody is buying.
 			    </div>
-
-                <a class="btn btn-primary"
-                   href="http://news.englishpatient.ru"
-                   style="font-size: 30px; margin-top: 50px; margin-left: 18px;">
-                    <b>Новости</b>
-                </a>
-			</div>		
+			</div>
 		</div>
-		
+
 	</div>
 </header>
 
@@ -246,8 +241,8 @@ table tbody tr:nth-child(even)
 	<div class="container" style="margin-top: 40px;">
 		<div class="wrapperContent" style="padding-left: 30px; padding-bottom: 40px; box-shadow: 0 5px 40px rgba(0, 0, 0, 0.46); border-radius: 20px; padding-top: 10px; background-image: url('img/1.png');">
 
-			<!-- Testimonials -->
-			<div class="row">
+            <!-- История -->
+			<div class="row" id="history" style="padding-top: 120px; margin-top: -120px;">
 				<div class="twelve columns" style="line-height: 20px; text-align: justify;">
 				<h2>История</h2>
 				<!-- <blockquote>  -->
@@ -286,14 +281,14 @@ table tbody tr:nth-child(even)
 			</div>
 			
 			<!-- Образовательные технологии -->
-			<div class="row">			
+			<div class="row" id="technology" style="padding-top: 120px; margin-top: -120px;">
 				<div class="twelve columns" style="line-height: 20px; text-align: justify;">
 				<h2>Образовательные технологии</h2>
 				<!-- <blockquote>  -->
 				Наша задача – помочь вам выучить язык, сделать так, чтобы у вас не возникло мысли прекратить занятия. Но не в упорстве дело: мы создаем атмосферу, в которой вы забываете, что учите язык: вы смотрите <a target="_blank" href="http://the-english-patient.com/SportPatient-war/faces/personal/demo.xhtml">фрагменты фильмов и новостей</a>, слушаете музыку, получая от этого удовольствие. Язык в таком случае становится просто побочным продуктом этого процесса. 
-Теперь о нашем «секрете» - о названии школы. <span class="readMore"> ... <a href="javascript: void(0);">читать далее</a></span> <span class="hiddenText"> Да, так назывался созданный мной клуб английского языка в медицинском университете. Да, я люблю фильм “The English Patient”, но он здесь почти не причем. Многие, зная мою натуру, думают, что я хочу разозлить народ, что я хочу кого-то «пролечить», приравнивая незнание языка к порочной болезни. Это чушь. Образ «пациента» мне нужен только для того, чтобы вы поняли, что все в ваших руках, а не в руках официальных «врачей» или «шаманов». Именно поэтому бубен является главным элементом сайта <a target="_blank" href="http://the-english-patient.com">the-english-patient.com</a>, на котором вы сможете более подробно ознакомиться с моими мыслями.
-Верим мы «врачам» или нет, но «таблетками» мы именно пользуемся. Желательно импортными. Именно поэтому мы выбрали курс Headway для наших занятий, хотя в их основе все же – разработанные нашими лингвистами и программистами ресурсы. Это программа «Аудитор» для развития навыков речи, это <a target="_blank" href="http://englishsmacks.com">englishsmacks.com</a> – развитие способности распознавать речь на слух и <a target="_blank" href="http://idiophrases.com">idiophrases.com</a> – английские идиомы (этот ресурс – для гурманов и повышения квалификации преподавателей).  Сейчас у нас также идет работа и над другими ресурсами и программами, доступ к которым наши клиенты получают бесплатно.
-</span>
+                Теперь о нашем «секрете» - о названии школы. <span class="readMore"> ... <a href="javascript: void(0);">читать далее</a></span> <span class="hiddenText"> Да, так назывался созданный мной клуб английского языка в медицинском университете. Да, я люблю фильм “The English Patient”, но он здесь почти не причем. Многие, зная мою натуру, думают, что я хочу разозлить народ, что я хочу кого-то «пролечить», приравнивая незнание языка к порочной болезни. Это чушь. Образ «пациента» мне нужен только для того, чтобы вы поняли, что все в ваших руках, а не в руках официальных «врачей» или «шаманов». Именно поэтому бубен является главным элементом сайта <a target="_blank" href="http://the-english-patient.com">the-english-patient.com</a>, на котором вы сможете более подробно ознакомиться с моими мыслями.
+                Верим мы «врачам» или нет, но «таблетками» мы именно пользуемся. Желательно импортными. Именно поэтому мы выбрали курс Headway для наших занятий, хотя в их основе все же – разработанные нашими лингвистами и программистами ресурсы. Это программа «Аудитор» для развития навыков речи, это <a target="_blank" href="http://englishsmacks.com">englishsmacks.com</a> – развитие способности распознавать речь на слух и <a target="_blank" href="http://idiophrases.com">idiophrases.com</a> – английские идиомы (этот ресурс – для гурманов и повышения квалификации преподавателей).  Сейчас у нас также идет работа и над другими ресурсами и программами, доступ к которым наши клиенты получают бесплатно.
+                </span>
                <br/>
                 <!-- </blockquote>  -->
 				</div>
@@ -301,7 +296,7 @@ table tbody tr:nth-child(even)
 			
 			
 			<!-- Преподаватели -->
-			<div class="row">			
+			<div class="row" id="teachers" style="padding-top: 120px; margin-top: -120px;">
 				<div class="twelve columns" style="line-height: 20px; text-align: justify;">
 				<h2>Преподаватели</h2>
 				<!-- <blockquote>  -->
@@ -341,7 +336,7 @@ table tbody tr:nth-child(even)
 				</div>
 			</div>
 			<!-- 4. Интерьеры школы -->
-			<div class="row">			
+			<div class="row" id="interier" style="padding-top: 120px; margin-top: -120px;">
 				<div class="twelve columns" style="line-height: 20px; text-align: justify;">
 				<h2>Интерьеры школы</h2>
 				<!-- <blockquote>  -->
@@ -372,7 +367,7 @@ table tbody tr:nth-child(even)
 				</div>
 			</div>
 
-			<div id="pricing" class="row">
+			<div id="pricing" class="row" id="pricing" style="padding-top: 120px; margin-top: -120px;">
                 <div class="twelve columns">
                     <h2 style="text-align: left;">Цены</h2>
                     <table style="margin-top: 15px;">
@@ -448,23 +443,23 @@ table tbody tr:nth-child(even)
 
             </div>
 
-				<div class="row">
-				<div class="twelve columns" style="line-height: 20px;">	
-				<h2>Администрация школы</h2>
-				<!-- <blockquote>  -->
-				<ul style="list-style: initial; margin-left: 20px;">
-				    <li>Лирмак Юрий Михайлович - директор (<a href="mailto:lirmakym@mail.ru" >lirmakym@mail.ru</a>, +7(913)820-7808)</li>
-                    <!--<li>Павлова Ирина Анатольевна - зам. директора по общим вопросам (<a href="mailto:iapav@mail.ru" >iapav@mail.ru</a>,  +7(913)841-6303)</li>-->
-                    <li>Рон Стайпек - председатель Supervisory Board (<a target="_blank" href="attachments/RonStipekValidationLetter2014.pdf">файл 1</a>, <a target="_blank" href="attachments/Wolfgang_Ref.pdf">файл 2</a>)</li>
-				    
-				</ul>
-								
-				телефон фирмы: (3822) 41-37-71
-               
-               <br/>
-                <!-- </blockquote>  -->
-				</div>
-			</div>
+            <div class="row"id="admin" style="padding-top: 120px; margin-top: -120px;">
+            <div class="twelve columns" style="line-height: 20px;">
+            <h2>Администрация школы</h2>
+            <!-- <blockquote>  -->
+            <ul style="list-style: initial; margin-left: 20px;">
+                <li>Лирмак Юрий Михайлович - директор (<a href="mailto:lirmakym@mail.ru" >lirmakym@mail.ru</a>, +7(913)820-7808)</li>
+                <!--<li>Павлова Ирина Анатольевна - зам. директора по общим вопросам (<a href="mailto:iapav@mail.ru" >iapav@mail.ru</a>,  +7(913)841-6303)</li>-->
+                <li>Рон Стайпек - председатель Supervisory Board (<a target="_blank" href="attachments/RonStipekValidationLetter2014.pdf">файл 1</a>, <a target="_blank" href="attachments/Wolfgang_Ref.pdf">файл 2</a>)</li>
+
+            </ul>
+
+            телефон фирмы: (3822) 41-37-71
+
+           <br/>
+            <!-- </blockquote>  -->
+            </div>
+        </div>
 				
 			<!-- Spacer Column -->
 			<div class="row"><div class="twelve columns"></div></div>
@@ -528,11 +523,8 @@ table tbody tr:nth-child(even)
 			<div class="three columns">
 				<h3>Контакты </h3>
 				<ul class="footericons">
-					<li><a href="javascript: void(0);" class="icon"><i class="gen foundicon-phone"> +7(3822)413-771</i></a></li>
-					<li><a href="mailto:lirmakym@mail.ru" class="icon"><i class="gen foundicon-mail">lirmakym@mail.ru</i></a></li>
-					<li><a href="mailto:lirmakym@mail.ru" class="icon"><i class="gen foundicon-mail">iapav@mail.ru</i></a></li>
-					<li style="display: none;" ><a href="http://www.themetwins.com/conversio/demo/#" class="icon"><i class="gen foundicon-star"> Bookmark Conversio</i></a></li>
-					<li style="display: none;" ><a href="http://www.themetwins.com/conversio/demo/#" class="icon"><i class="gen foundicon-heart"> Sign up for free</i></a></li>
+					<li><a><i> +7(3822)413-771</i></a></li>
+					<li><a href="mailto:lirmakym@mail.ru"><i>lirmakym@mail.ru</i></a></li>
 				</ul>
 			</div>
 		</div>
