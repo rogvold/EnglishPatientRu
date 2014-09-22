@@ -107,6 +107,15 @@ table tbody tr:nth-child(even)
 </style>
 
 <script>
+    function hideAll()
+    {
+        $('#aboutUs').addClass("hiddenText");
+        $('#interior').addClass("hiddenText");
+        $('#pricing').addClass("hiddenText");
+        $('#technology').addClass("hiddenText");
+        $('#admin').addClass("hiddenText");
+        $('#learnDif').addClass("hiddenText");
+    }
     $(document).ready(
             function(){
                 $('a[href^="#"]').click(function(){
@@ -114,6 +123,46 @@ table tbody tr:nth-child(even)
                     $('html, body').animate({scrollTop: $(target).offset().top}, 500);
                     return false;
                 });
+                $('#mainBtn').click(
+                        function()
+                        {
+                            hideAll();
+                            $('#aboutUs').removeClass("hiddenText");
+                            $('#interior').removeClass("hiddenText");
+                            $('#pricing').removeClass("hiddenText");
+                            $('#technology').removeClass("hiddenText");
+                            $('#admin').removeClass("hiddenText");
+                            $('#learnDif').removeClass("hiddenText");
+                        }
+                );
+                $('#serveBtn').click(
+                        function()
+                        {
+                            hideAll();
+                            $('#pricing').removeClass("hiddenText");
+                        }
+                );
+                $('#aboutBtn').click(
+                        function()
+                        {
+                            hideAll();
+                            $('#aboutUs').removeClass("hiddenText");
+                        }
+                );
+                $('#techBtn').click(
+                        function()
+                        {
+                            hideAll();
+                            $('#technology').removeClass("hiddenText");
+                        }
+                );
+                $('#adminBtn').click(
+                        function()
+                        {
+                            hideAll();
+                            $('#admin').removeClass("hiddenText");
+                        }
+                );
             });
 </script>
 
@@ -154,10 +203,10 @@ table tbody tr:nth-child(even)
                     <div class="btn-group">
                         <a id="mainBtn" type="button" class="btn btn-default mainButton" href="#main"><b>Главная</b></a>
                         <a id="newsBtn" type="button" class="btn btn-default mainButton" href="http://news.englishpatient.ru" target="_blank"><b>Новости</b></a>
-                        <a id="serveBtn" type="button" class="btn btn-default mainButton" href="#pricing"><b>Услуги</b></a>
-                        <a id="aboutBtn" type="button" class="btn btn-default mainButton" href="#aboutUs"><b>О нас</b></a>
-                        <a id="techBtn" type="button" class="btn btn-default mainButton" href="#technology"><b>Технология</b></a>
-                        <a id="adminBtn" type="button" class="btn btn-default mainButton" href="#admin"><b>Администрация</b></a>
+                        <a id="serveBtn" type="button" class="btn btn-default mainButton" href="#mainContent"><b>Услуги</b></a>
+                        <a id="aboutBtn" type="button" class="btn btn-default mainButton" href="#mainContent"><b>О нас</b></a>
+                        <a id="techBtn" type="button" class="btn btn-default mainButton" href="#mainContent"><b>Образовательные технологии</b></a>
+                        <a id="adminBtn" type="button" class="btn btn-default mainButton" href="#mainContent"><b>Администрация</b></a>
                         <a type="button" class="btn btn-default mainButton" href="javascript: void(0);" data-toggle="modal" data-target="#basicModal"><b>Sweet tooth</b></a>
                     </div>
                 </div>
@@ -169,7 +218,7 @@ table tbody tr:nth-child(even)
 			<div class="containerReg" >
 				<div class="twelve columns">
 					<div class="six columns" style="opacity: 0.9; float: right;">
-						<div class="reglayer" style="border-radius: 20px;">
+						<div class="reglayer" style="border-radius: 20px; width: 490px;">
 							<div class="twelve columns" style="text-align: center;">
 								<!-- Registration Form -->
 								<div class="lead" style="font-size: 35px; color: red; margin-top: 50px;">Внимание!
@@ -181,9 +230,6 @@ table tbody tr:nth-child(even)
                                        advanced. <br/>
                                     Спешите! Количество мест ограничено.
                                 </div>
-                     <!--       <div class="lead" style="font-size: 20px; line-height: 26px;" id="announcementBlock" >
-                                    loading...
-                                </div> -->
                             </div>
 		                </div>
                     </div>
@@ -192,15 +238,12 @@ table tbody tr:nth-child(even)
 		</div>
 
 		<div class="row">
-            <div class="row" style="float: left; opacity: 0.9; margin-right: 15px; margin-top: -410px;">
-                <iframe class="elShadow well"
-                        style="border-radius: 20px;"
-                        src="//player.vimeo.com/video/106393621?title=0&amp;byline=0&amp;portrait=0"
-                        width="500"
-                        height="380"
-                        frameborder="0"
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                </iframe>
+            <div class="row well" style="float: left; opacity: 0.99; margin-right: 15px; margin-top: -410px; border-radius: 20px;">
+                <iframe src="//player.vimeo.com/video/106812158?title=0&amp;byline=0&amp;portrait=0"
+                        width="460"
+                        height="336"
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                 </iframe>
             </div>
 		</div>
 
@@ -208,14 +251,14 @@ table tbody tr:nth-child(even)
 </header>
 
 <!-- Begin Content -->
-	<div class="container" style="margin-top: 40px;">
+	<div class="container">
 		<div class="wrapperContent" style="padding-left: 30px; padding-bottom: 40px; box-shadow: 0 5px 40px rgba(0, 0, 0, 0.46); border-radius: 20px; padding-top: 10px; background-image: url('img/1.png');">
-            <!-- История -->
-			<div class="row" id="aboutUs" style="padding-top: 120px; margin-top: -120px;">
+            <div id="mainContent" style="padding-top: 140px; margin-top: -140px;">
+            </div>
+			<div class="row" id="aboutUs">
 				<div class="twelve columns" style="line-height: 20px; text-align: justify;">
-                    <h2>О нас</h2> <br/>
+                    <h2>О нас</h2>
 				    <h4>История</h4>
-				    <!-- <blockquote>  -->
                     Наша языковая школа открыла свои двери в июне 2014 года.
                     Эволюция развития наших подходов к языку – это три десятилетия, но начнем с конца прошлого века, когда
                     я создал фирму «Эксодус».
@@ -241,15 +284,9 @@ table tbody tr:nth-child(even)
                     также моей школе <a href="http://inotomsk.ru/materials/news/v-tomske/10-sovetov-ot-yuriya-lirmaka/">подготовку</a>
                     менеджеров по продаже инновационной продукции.
                     Очень надеюсь и на ваше доверие, господа.
-				</div>
-			</div>
-			
-			<!-- Преподаватели -->
-			<div class="row" id="teachers" style="padding-top: 120px; margin-top: -120px;">
-				<div class="twelve columns" style="line-height: 20px; text-align: justify;">
-				<h4>Преподаватели</h4>
-				<!-- <blockquote>  -->
-				    Бизнес и работа в университетах помогли мне выработать свои критерии, по которым я отбираю преподавателей.
+                    <h4>Преподаватели</h4>
+                    <!-- <blockquote>  -->
+                    Бизнес и работа в университетах помогли мне выработать свои критерии, по которым я отбираю преподавателей.
                     Во-первых, они должны знать и любить английский язык. К сожалению, этому требованию удовлетворяет лишь
                     один из тысячи тех, кто получил лингвистическое образование. Мне удалось собрать таковых в одном месте,
                     но знание языка было не единственным критерием, по которому я отбирал персонал.
@@ -261,58 +298,50 @@ table tbody tr:nth-child(even)
                     точными науками! Рядом с такими людьми не может быть неинтересно.  А это значит, что ваш успех гарантирован.
                     Здесь вы сможете прочитать о наших подходах к обучению. Носители языка тоже привлекаются к преподаванию
                     в нашей школе, один из которых является консультантом по организации всего образовательного процесса.
-              <!--      <div style="text-align: center;">
-                        <h3>Евгения</h3>
-                        <img src="img/awakfzwe.jpg" height="500" width="300" />
-                        <p>
-                            Энергичный и умный преподаватель, которая побывала во многих уголках Земли, <br/>
-                            Евгения готова поделиться с Вами своими знаниями об английском языке и культуре англоязычных стран.<br/>
-                        </p>
-                        <h3>Вусал</h3>
-                        <img src="img/kqmkkpsb.jpg" height="300" width="300" />
-                        <p>
-                            Этот молодой и любознательный преподаватель поможет Вам зажечь в себе искру интереса и любви к языку, <br/>
-                            после чего Вы и сами не заметите, как заговорите по-английски. <br/>
-                        </p>
-                    </div> -->
-                    <br/>
-				</div>
-			</div>
-
-            <!-- 4. Интерьеры школы -->
-            <div class="row" id="interier" style="padding-top: 120px; margin-top: -120px;">
-                <div class="twelve columns" style="line-height: 20px; text-align: justify;">
+                    <!--      <div style="text-align: center;">
+                              <h3>Евгения</h3>
+                              <img src="img/awakfzwe.jpg" height="500" width="300" />
+                              <p>
+                                  Энергичный и умный преподаватель, которая побывала во многих уголках Земли, <br/>
+                                  Евгения готова поделиться с Вами своими знаниями об английском языке и культуре англоязычных стран.<br/>
+                              </p>
+                              <h3>Вусал</h3>
+                              <img src="img/kqmkkpsb.jpg" height="300" width="300" />
+                              <p>
+                                  Этот молодой и любознательный преподаватель поможет Вам зажечь в себе искру интереса и любви к языку, <br/>
+                                  после чего Вы и сами не заметите, как заговорите по-английски. <br/>
+                              </p>
+                          </div> -->
                     <h4>Интерьеры школы</h4>
                     Когда мне было 9 лет, я сбежал из районной больницы, похожей на большую избу. Я и сейчас недолюбливаю
                     деревянную архитектуру. Когда меня вернули силой и узнали причину побега, то я услышал шедевр:
                     «Не красна изба углами, а красна пирогами»… Сомневаюсь, что качественные «пироги» возможны в убогой атмосфере.
                     Мы не только приложили все усилия для того, чтобы вы чувствовали себя комфортно. Мы оснастили нашу (хотел,
                     но передумал написать «больницу») школу первоклассным оборудованием, чтобы образовательные «пироги» были
-                    на уровне. Я всю жизнь мечтал о такой школе! Приходите и разделите мою мечту. <br/> <br/>
+                    на уровне. Я всю жизнь мечтал о такой школе! Приходите и разделите мою мечту.
                     <br/>
-                <span style="float: right; font-style: italic; margin-top: 20px;"  >
-                    С уважением, <br/>
-                    Директор школы «Английский пациент»
-                    <br/>
-                    Юрий Лирмак
-                </span>
-                    <br/>
-                </div>
-
-                <div class="galleryDiv">
-                    <ul>
-                        <li><img src="assets/updatedInterior/01.jpg" /> </li>
-                        <li><img src="assets/updatedInterior/02.jpg" /> </li>
-                        <li><img src="assets/updatedInterior/03.jpg" /> </li>
-                        <li><img src="assets/updatedInterior/04.jpg" /> </li>
-                        <li><img src="assets/updatedInterior/05.jpg" /> </li>
-                        <li><img src="assets/updatedInterior/06.jpg" /> </li>
-                    </ul>
-                </div>
+                    <span style="float: right; font-style: italic; margin-top: 20px;"  >
+                        С уважением, <br/>
+                        Директор школы «Английский пациент»
+                        <br/>
+                        Юрий Лирмак
+                    </span>
+                        <br/>
+                    </div>
+                    <div class="galleryDiv">
+                        <ul>
+                            <li><img src="assets/updatedInterior/01.jpg" /> </li>
+                            <li><img src="assets/updatedInterior/02.jpg" /> </li>
+                            <li><img src="assets/updatedInterior/03.jpg" /> </li>
+                            <li><img src="assets/updatedInterior/04.jpg" /> </li>
+                            <li><img src="assets/updatedInterior/05.jpg" /> </li>
+                            <li><img src="assets/updatedInterior/06.jpg" /> </li>
+                        </ul>
+                    </div>
             </div>
 
             <!-- Образовательные технологии -->
-            <div class="row" id="technology" style="padding-top: 120px; margin-top: -120px;">
+            <div class="row" id="technology">
                 <div class="twelve columns" style="line-height: 20px; text-align: justify;">
                     <h2>Образовательные технологии</h2>
                     <!-- <blockquote>  -->
@@ -339,7 +368,7 @@ table tbody tr:nth-child(even)
                 </div>
             </div>
 
-            <div class="row" id="admin" style="padding-top: 120px; margin-top: -120px;">
+            <div class="row" id="admin">
                 <div class="twelve columns" style="line-height: 20px;">
                     <h2>Администрация школы</h2>
                     <ul>
@@ -351,9 +380,136 @@ table tbody tr:nth-child(even)
                 </div>
             </div>
 
-			<div id="pricing" class="row" style="padding-top: 120px; margin-top: -120px;">
+			<div id="pricing" class="row">
                 <div class="twelve columns">
                     <h2 style="text-align: left;">Услуги</h2>
+                    <div style="text-align: center;">
+                        <table class="table table-bordered">
+                            <tr style="background-color: rgb(248, 217, 0);">
+                                <td>
+                                    <b>Название программы</b>
+                                </td>
+                                <td>
+                                    <b>Группа</b>
+                                </td>
+                                <td>
+                                    <b>Количество занятий</b>
+                                </td>
+                                <td>
+                                    <b>Продолжительность</b>
+                                </td>
+                                <td>
+                                    <b>Стоимость</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Standart
+                                </td>
+                                <td>
+                                    Группа
+                                    5-10 человек
+                                </td>
+                                <td>
+                                    8 занятий/месяц
+                                </td>
+                                <td>
+                                    1,5 часа
+                                </td>
+                                <td>
+                                    3800 руб
+                                </td>
+                            </tr>
+                            <tr class="warning">
+                                <td>
+                                    Standart+
+                                </td>
+                                <td>
+                                    Группа
+                                    5-10 человек
+                                </td>
+                                <td>
+                                    12 занятий/месяц
+                                </td>
+                                <td>
+                                    1,5 часа
+                                </td>
+                                <td>
+                                    5400 руб
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Premium
+                                </td>
+                                <td>
+                                    Мини группа
+                                    2-3 человека
+                                </td>
+                                <td>
+                                    8 занятий/месяц
+                                </td>
+                                <td>
+                                    1,5 часа
+                                </td>
+                                <td>
+                                    6400 руб
+                                </td>
+                            </tr>
+                            <tr class="warning">
+                                <td>
+                                    Premium+
+                                </td>
+                                <td>
+                                    Мини группа
+                                    2-3 человека
+                                </td>
+                                <td>
+                                    12 занятий/месяц
+                                </td>
+                                <td>
+                                    1,5 часа
+                                </td>
+                                <td>
+                                    9000 руб
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    VIP
+                                </td>
+                                <td>
+                                    Индивидуальные занятия
+                                </td>
+                                <td>
+                                    8 занятий/месяц
+                                </td>
+                                <td>
+                                    1,5 часа
+                                </td>
+                                <td>
+                                    13500 руб
+                                </td>
+                            </tr>
+                            <tr class="warning">
+                                <td>
+                                    VIP+
+                                </td>
+                                <td>
+                                    Индивидуальные занятия
+                                </td>
+                                <td>
+                                    12 занятий/месяц
+                                </td>
+                                <td>
+                                    1,5 часа
+                                </td>
+                                <td>
+                                    19000 руб
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <table style="margin-top: 15px;">
                         <tr>
                             <td style="text-align: center; width: 300px;"><h3>Пакет «Standard»</h3>
@@ -423,20 +579,19 @@ table tbody tr:nth-child(even)
                     <br/>
                 </div>
             </div>
-				
-			<!-- Challenges & Video -->
-			<div class="row">		
-				<div class="four columns" style="line-height: 19px; font-size: 15px; text-align: left;">
+
+			<div id ="learnDif" class="row">
+				<div class="four columns">
 					<h2>Трудно ли учиться? </h2>
-					Посмотрите, как легко запомнить слово, которое вы, скорее всего, знаете, но неправильно произносите.
-                    Виноваты, конечно, турфирмы, которые всегда предложат вам «сьют». Из-за них вам трудно будет понять
-                    работника на гостиничной стойке: может показаться, что он предлагает вам сладости (sweets).
-                    Любители поговорок тоже найдут для себя интересую фразу в самом конце видео.
-                    Мы собрали также для вас
-                    <a href="http://www.idiophrases.com/list.html#upandcoming" style="font-size: 15px;" target="_blank" >
-                    сотни идиом, пословиц и редких слов</a>.  Их запомнить тоже нетрудно!
-					<a href="#" style="display: none;" class="radius button small">Sign up for free now</a>	
-					<p></p>				
+					<p style="text-align: justify;">
+                        Посмотрите, как легко запомнить слово, которое вы, скорее всего, знаете, но неправильно произносите.
+                        Виноваты, конечно, турфирмы, которые всегда предложат вам «сьют». Из-за них вам трудно будет понять
+                        работника на гостиничной стойке: может показаться, что он предлагает вам сладости (sweets).
+                        Любители поговорок тоже найдут для себя интересую фразу в самом конце видео.
+                        Мы собрали также для вас
+                        <a href="http://www.idiophrases.com/list.html#upandcoming" style="font-size: 15px;" target="_blank" >
+                            сотни идиом, пословиц и редких слов</a>.  Их запомнить тоже нетрудно!
+                    </p>
 				</div>
 				<div class="eight columns">
 					<h2></h2>
@@ -446,8 +601,6 @@ table tbody tr:nth-child(even)
 					</div>
 				</div>
 			</div>
-			
-		<!--	<a href="sixChamber.html" class="btn btn-primary" style="margin-left: 8px; margin-top: 30px; font-size: 26px;"> <b> Палата №6 </b> </a> -->
 		</div>
 </div>
 
@@ -493,57 +646,28 @@ table tbody tr:nth-child(even)
 		</div>
 	</div>
 </footer>
-		
-    <div id="myModal" class="reveal-modal medium">
-	    <p>Для того, чтобы записаться на первый бесплатный урок, заполните анкету. Предложение ограничено.</p>
-		<div>
-		    <br/>
-		    <div id="emailAndPhoneBlock">
-		        <label>Ваше имя:</label><input id="name" placeholder="например: Вася Пупкин"  type="text" />
-			    <label>e-mail:</label><input placeholder="например: vasya.puplin@mail.ru" id="email" type="text" />
-			    <label>телефон</label><input placeholder="например: +79854363704" id="phone" type="text" />
-			</div>
-			<div id="formErrorBlock" style="color: red;margin-top: 10px; display: none;">
-			    ься на первый бесплатный урок, заполните анкету. Предложение ограничено.</p>
-			</div>
-		</div>
-		<p>
-		</p>
-		<br/>
-        <p>
-            <a href="javascript: void(0);" id="submitButton" class="radius button small">Записаться</a>
-        </p>
-     </div>
-
-  <!-- Reveal Memberlogin Div Content -->
-  <div id="videoModal" class="reveal-modal medium" data-reveal>
-      <center>
-			<iframe id="vimeoIframe" src="http://player.vimeo.com/video/93053505?title=0&byline=0&portrait=0" width="400" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </center>
-          <a class="close-reveal-modal">×</a>
-  </div>
 
     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title" id="myModalLabel">Друзья!</h1>
-            </div>
-            <div class="modal-body">
-                <div class="lead" style="text-align: justify;">
-                    Вы наверняка понимаете разницу, например, между моим любимым мороженым BaskinRobbins и стаканчиком "СССР"?
-                    Такая же разница и между теми, кто считает, что знает и может преподавать язык.
-                    Помогите серьезным корпоративным клиентам почувствовать разницу, и мы доставим Вам 10 кг лучшего мороженого.
-                    Впрочем, можно и наличными.
-                    Если эти строки читает представитель корпорации, то денег я вам не дам, но 10 кг мороженого ваши сотрудники
-                    съедят во время занятий. Занятия будут тоже "вкусными". <br/>
-                    <b>Звоните 507808</b>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="myModalLabel">Друзья!</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="lead" style="text-align: justify;">
+                        Вы наверняка понимаете разницу, например, между моим любимым мороженым BaskinRobbins и стаканчиком "СССР"?
+                        Такая же разница и между теми, кто считает, что знает и может преподавать язык.
+                        Помогите серьезным корпоративным клиентам почувствовать разницу, и мы доставим Вам 10 кг лучшего мороженого.
+                        Впрочем, можно и наличными.
+                        Если эти строки читает представитель корпорации, то денег я вам не дам, но 10 кг мороженого ваши сотрудники
+                        съедят во время занятий. Занятия будут тоже "вкусными". <br/>
+                        <b>Звоните 507808</b>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
                 </div>
             </div>
-            <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
-            </div>
         </div>
-    </div>
     </div>
 		
   <!-- Included JS Files (Compressed) -->
@@ -554,7 +678,8 @@ table tbody tr:nth-child(even)
   <!-- Initialize JS Plugins -->
   
   <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function()
-  { try
+  {
+    try
     {
         w.yaCounter24872255 = new Ya.Metrika({id:24872255, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true});
     }
@@ -570,7 +695,7 @@ table tbody tr:nth-child(even)
       <div>
           <img src="//mc.yandex.ru/watch/24872255" style="position:absolute; left:-9999px;" alt="" />
       </div>
-  </noscript><!-- /Yandex.Metrika counter -->
+  </noscript>
     <!-- RedHelper -->
     <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
             src="https://web.redhelper.ru/service/main.js?c=englishpatient">
