@@ -1,0 +1,35 @@
+.elShadow
+{
+	box-shadow: 0 1px 40px rgba(0, 0, 0, 0.46);
+}
+.textOffset
+{
+	text-indent: 50px;
+}
+.wellCustom
+{
+	border-radius: 20px;
+}
+.menuItem
+{
+	font-family: Verdana !important;
+}
+.widthRestrict
+{
+    min-width: 600px !important;
+}
+.mainLayer
+{
+    border: solid; border-width: 2px;
+    border-color: lightgray;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.46);
+}
+
+.navStyle
+{
+    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.46);
+    background-color: rgb(248, 217, 91);
+}
